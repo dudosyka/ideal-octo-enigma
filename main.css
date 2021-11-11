@@ -1,0 +1,227 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+}
+body > main {
+    display: flex;
+    flex-direction: row;
+}
+.card {
+    display: flex;
+    width: 60%;
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+.pc .card {
+    height: 120vh;
+    margin-top: -20vh;
+    padding-top: 20vh;
+    transform: rotate(5deg);
+    min-width: 400px;
+    flex-direction: column;
+}
+.mobile .card {
+    min-width: 100%;
+    height: 90vh;
+    padding-bottom: 20px;
+    flex-direction: row;
+}
+.flex_col {
+    display: flex;
+    flex-direction: column;
+    min-width: 100%;
+}
+.hide {
+    width: 20% !important;
+}
+.mobile .hide {
+    height: 5vh !important;
+}
+.onstart {
+    width: 50% !important;
+}
+.card-red {
+    background-color: #8B0116;
+}
+.card-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-right: 20px;
+    transition-duration: 0.5s;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.pc .card-header {
+    transform: rotate(-5deg);
+}
+.big-title {
+    color: #8B0116;
+    font-size: 200px;
+    font-weight: bold;
+    font-family: Noto Sans, serif;
+    font-style: normal;
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    line-height: 300px;
+}
+.card-red .big-title {
+    color: #E8E8E8 !important;
+}
+.big-title div {
+    position: relative;
+    top: 80px;
+}
+.middle {
+    margin-left: 10px;
+    font-size: 50px;
+    line-height: 100px;
+    top: 22px !important;
+}
+.small {
+    font-family: Noto Sans, serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 33px;
+    margin-left: 2%;
+    transition-duration: 0.5s;
+    top: 8px !important;
+}
+.pc .hide .card-header {
+    top: -300vh !important;
+}
+.mobile .hide .card-header {
+    left: -300vh !important;
+}
+.card-body {
+    width: 80%;
+    align-self: center;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 0 10px black;
+    transition-duration: 0.5s;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.pc .card-body {
+    transform: rotate(-5deg);
+}
+.card-red .card-body {
+    background-color: #E8E8E8;
+}
+.pc .hide .card-body {
+    position: relative;
+    top: -300vh;
+}
+.mobile .hide .card-body {
+    position: relative;
+    left: -300vh;
+}
+.card-body header {
+    font-family: Noto Sans, serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+}
+.card-body article {
+    padding: 20px;
+    font-family: Noto Sans, serif;
+    font-style: normal;
+    font-size: 18px;
+}
+.card-body article ul li {
+    margin-top: 10px;
+}
+.card-body footer {
+    display: flex;
+    align-self: center;
+    flex-direction: row;
+    width: auto;
+    min-width: 25%;
+    justify-content: space-around;
+}
+.contact {
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    background: linear-gradient(357.39deg, #8B0116 4.72%, #CE0020 95.18%);
+    cursor: help;
+}
+.icon {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: 15px;
+    left: 15px;
+}
+.card-body footer .contact:first-child .icon {
+    background-image: url("./phone-call-svgrepo-com.svg");
+}
+.card-body footer .contact:last-child .icon {
+    background-image: url("./email-svgrepo-com.svg");
+}
+.hide .min-label {
+    transform: rotate(-5deg);
+    position: absolute;
+    top: -520px;
+    text-align: center;
+    border: black solid 1px;
+    font-size: 100px;
+}
+#sec2 .min-label {
+    top: -563px;
+}
+#sec3 .min-label {
+    top: -557px;
+}
+.mobile {
+    display: none;
+    flex-direction: column;
+}
+.title {
+    display: none;
+}
+.hide .title {
+    display: block;
+    font-size: 4vh;
+    color: #8B0116;
+    font-weight: bold;
+    font-family: Noto Sans, serif;
+    position: relative;
+    top: 10px;
+    right: 52%;
+    width: 60px !important;
+}
+.card-red .title {
+    color: #E8E8E8;
+}
+
+#secMob2 .title {
+    right: 52.4%;
+}
+
+#secMob3 .title {
+    right: 53%;
+}
+
+@media screen and (max-width: 1569px) {
+    body {
+        overflow: scroll;
+    }
+    body > main {
+        display: none;
+    }
+    .mobile {
+        display: flex;
+    }
+}
+
