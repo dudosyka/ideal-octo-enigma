@@ -1,7 +1,7 @@
 const startForMobile = function () {
     const particleOpacity = 0.1;
     const lineOpacity = 0.3;
-    const num = 20;
+    const num = 10;
     particlesJS('secMob1',
         {
             "particles": {
@@ -714,8 +714,9 @@ const startForPc = function () {
         }
     );
 }
-startForMobile();
+//startForMobile();
 if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
     startForPc();
+    startForMobile();
 }
 
