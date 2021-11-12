@@ -5,14 +5,22 @@
     <meta charset="UTF-8">
     <title>ПИАР РЕКЛАМА МАРКЕТИНГ</title>
     <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./particles/particlesJs.css">
+
     <script src="./main.js"></script>
 </head>
 <body>
+    <!-- particles.js container -->
+    <div id="particles-js"></div>
+
     <main class="pc">
         <section id="sec1" class="onstart card hide" onclick="showSection(1)">
             <header class="card-header">
-                <div class="big-title"><div>P</div><div class="middle">R</div><div class="small">искусство и наука достижения гармонии с внешним окружением.</div></div>
-                <!--                <div class="sub-title"></div>-->
+                <div class="big-title">
+                    <div>P</div>
+                    <div class="middle">R</div>
+                    <div class="small">искусство и наука достижения гармонии с внешним окружением.</div>
+                </div>
             </header>
             <main class="card-body">
                 <header>Услуги</header>
@@ -27,14 +35,15 @@
                     </ul>
                 </article>
                 <footer>
-                    <div class="contact" onclick="copyContact()">
+                    <div class="contact" onclick="copyContact(2, true)">
                         <div class="icon"></div>
                     </div>
-                    <div class="contact" onclick="copyConctact()">
+                    <div class="contact" onclick="copyContact(2)">
                         <div class="icon"></div>
                     </div>
                 </footer>
             </main>
+            <div class="title">P</div>
         </section>
         <section id="sec2" class="onstart card card-red hide" onclick="showSection(2)" >
             <header class="card-header">
@@ -62,14 +71,15 @@
                     </ul>
                 </article>
                 <footer>
-                    <div class="contact" onclick="copyContact()">
+                    <div class="contact" onclick="copyContact(2, true)">
                         <div class="icon"></div>
                     </div>
-                    <div class="contact" onclick="copyConctact()">
+                    <div class="contact" onclick="copyContact(2)">
                         <div class="icon"></div>
                     </div>
                 </footer>
             </main>
+            <div class="title">R</div>
         </section>
         <section id="sec3" class="onstart card hide" onclick="showSection(3)">
             <header class="card-header">
@@ -98,18 +108,19 @@
                     </ul>
                 </article>
                 <footer>
-                    <div class="contact" onclick="copyContact()">
+                    <div class="contact" onclick="copyContact(2, true)">
                         <div class="icon"></div>
                     </div>
-                    <div class="contact" onclick="copyConctact()">
+                    <div class="contact" onclick="copyContact(2)">
                         <div class="icon"></div>
                     </div>
                 </footer>
             </main>
+            <div class="title">M</div>
         </section>
     </main>
     <main class="mobile">
-        <section id="secMob1" class="card hide" onclick="showMobileSection(1)">
+        <section id="secMob1" class="onstart card hide" onclick="showMobileSection(1)">
             <div class="flex_col">
                 <header class="card-header">
                     <div class="big-title"><div>P</div><div class="middle">R</div><div class="small">искусство и наука достижения гармонии с внешним окружением.</div></div>
@@ -127,10 +138,10 @@
                         </ul>
                     </article>
                     <footer>
-                        <div class="contact" onclick="copyContact()">
+                        <div class="contact" onclick="copyContact(2, true)">
                             <div class="icon"></div>
                         </div>
-                        <div class="contact" onclick="copyConctact()">
+                        <div class="contact" onclick="copyContact(2)">
                             <div class="icon"></div>
                         </div>
                     </footer>
@@ -165,10 +176,10 @@
                     </ul>
                 </article>
                 <footer>
-                    <div class="contact" onclick="copyContact()">
+                    <div class="contact" onclick="copyContact(2, true)">
                         <div class="icon"></div>
                     </div>
-                    <div class="contact" onclick="copyConctact()">
+                    <div class="contact" onclick="copyContact(2)">
                         <div class="icon"></div>
                     </div>
                 </footer>
@@ -204,10 +215,10 @@
                         </ul>
                     </article>
                     <footer>
-                        <div class="contact" onclick="copyContact()">
+                        <div class="contact" onclick="copyContact(2, true)">
                             <div class="icon"></div>
                         </div>
-                        <div class="contact" onclick="copyConctact()">
+                        <div class="contact" onclick="copyContact(2)">
                             <div class="icon"></div>
                         </div>
                     </footer>
@@ -216,5 +227,14 @@
             <div class="title">M</div>
         </section>
     </main>
+
+    <div id="modal" class="hide-modal" onclick="hideModal()">
+        <h3>Телефона: </h3><br>
+        +7(911)-088-57-58
+    </div>
+
+    <!-- scripts -->
+    <script src="./particles/particles.js"></script>
+    <script src="./particles/particlesJs.js"></script>
 </body>
 </html>
