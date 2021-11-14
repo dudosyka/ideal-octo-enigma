@@ -11,14 +11,11 @@ body > main {
     flex-direction: row;
     background: linear-gradient(357.37deg, #DDDDDD 32.58%, #E8E8E8 94.87%);
     min-width: 100%;
-    margin-left: 5%;
-    width: 105%;
 }
 .card {
     display: flex;
     width: 60%;
     transition-duration: 0.5s;
-    cursor: pointer;
     /*background: linear-gradient(357.37deg, #DDDDDD 32.58%, #E8E8E8 94.87%);
     background-image: url('');
     background-size: cover;
@@ -50,6 +47,7 @@ body > main {
 }
 .hide {
     width: 20% !important;
+    cursor: pointer;
 }
 .mobile .hide {
     height: 20vh !important;
@@ -66,18 +64,17 @@ body > main {
 .card-header {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
     padding-right: 20px;
     transition-duration: 0.9s;
     transition-property: opacity;
-    opacity: 0;
+    /*opacity: 0;*/
     position: relative;
     z-index: 2;
     top: 0;
     left: 0;
 }
 .pc .card-header {
-    transform: rotate(-5deg);
+    /*transform: rotate(-5deg);*/
 }
 .big-title {
     color: #8B0116;
@@ -95,13 +92,13 @@ body > main {
 }
 .big-title div {
     position: relative;
-    top: 80px;
+    align-self: center;
 }
 .middle {
     margin-left: 10px;
     font-size: 50px;
     line-height: 100px;
-    top: 22px !important;
+    top: 58px !important;
 }
 .small {
     font-family: Noto Sans, sans-serif;
@@ -111,7 +108,7 @@ body > main {
     line-height: 33px;
     margin-left: 2%;
     transition-duration: 0.5s;
-    top: 8px !important;
+    top: 53px !important;
 }
 .pc .hide .card-header {
     top: -300vh !important;
@@ -122,19 +119,19 @@ body > main {
 .card-body {
     width: 80%;
     align-self: center;
-    margin-top: 50px;
+    margin-top: 200px;
     display: flex;
     flex-direction: column;
-    border-radius: 20px;
+    border-radius: 15px;
     padding: 30px;
-    box-shadow:i 0 0 10px #e7e7e7;
+    box-shadow: 0 0 2px #e7e7e7;
     transition-duration: 0.9s;
     transition-property: opacity;
     position: relative;
     top: 0;
     left: 0;
     z-index: 2;
-    background-color: rgba(231,231,231,0.13);
+    background-color: rgba(231,231,231,0.8);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur( 10px );
     opacity: 0;
@@ -143,7 +140,9 @@ body > main {
     transform: rotate(-5deg);
 }
 .card-red .card-body {
-    background-color: rgba(231, 231, 231, 0.53);
+    background-color: rgba(206, 0, 32, 0.8);
+    color: white;
+    box-shadow: none;
 }
 .pc .hide .card-body {
     position: relative;
@@ -181,7 +180,7 @@ body > main {
     height: 60px;
     border-radius: 30px;
     background: linear-gradient(357.39deg, #8B0116 4.72%, #CE0020 95.18%);
-    cursor: help;
+    cursor: pointer;
 }
 .icon {
     width: 30px;
@@ -190,11 +189,16 @@ body > main {
     top: 15px;
     left: 15px;
 }
+
 .card-body footer .contact:first-child .icon {
-    background-image: url("./phone-call-svgrepo-com.svg");
+    background:
+    linear-gradient(357.37deg, #CDCDCD 32.58%, #B8B8B8 94.87%),
+    url("./phone-call-svgrepo-com.svg");
 }
 .card-body footer .contact:last-child .icon {
-    background-image: url("./email-svgrepo-com.svg");
+    background:
+    linear-gradient(357.37deg, #CDCDCD 32.58%, #B8B8B8 94.87%),
+    url("./email-svgrepo-com.svg");
 }
 .hide .min-label {
     transform: rotate(-5deg);
@@ -224,17 +228,15 @@ body > main {
 }
 .hide .title {
     display: block;
-    font-size: 4vh;
+    font-size: 3.5vh;
     color: #8B0116;
     font-weight: bold;
     font-family: Noto Sans, sans-serif;
     position: relative;
 }
 
-.mobile .hide .title {
-    top: 7vh;
-    right: 52%;
-    width: 60px !important;
+.hide .title div:first-letter {
+    font-size: 300%;
 }
 
 .pc .hide .title {
@@ -242,7 +244,13 @@ body > main {
     text-align: center;
     transform: rotate(-5deg);
     position: absolute;
-    top: 70vh;
+    top: 66vh;
+}
+
+.mobile .hide .title {
+    top: 7vh;
+    right: 52%;
+    width: 60px !important;
 }
 
 .card-red .title {
@@ -260,7 +268,7 @@ body > main {
 @media screen and (max-width: 1569px) {
     body {
         overflow: auto;
-	font-family: Noto Sans, sans-serif !important;
+	    font-family: Noto Sans, sans-serif !important;
     }
     body > main {
         display: none;

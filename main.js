@@ -29,6 +29,9 @@ const onStart = function () {
             card.classList.remove('onstart');
 }
 const showSection = function (id, mobile = false) {
+    if (currActive == id) {
+        return;
+    }
 
     const active = document.getElementById(mobile ? `secMob${id}` : `sec${id}`);
 
