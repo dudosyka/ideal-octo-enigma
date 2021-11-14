@@ -1,9 +1,27 @@
 let currActive = null;
 const hide = function (item) {
-    item.classList.add('hide');
+    setTimeout(() => {
+	    item.classList.add('hide');
+    }, 900);
+	    item.children[0].classList.remove("opacityZero");
+	    item.children[1].classList.remove("opacityZero");
 }
-const show = function (item) {
+const show = function (item, isFirst) {
+	if (!isFirst) {
+		setTimeout(() => {
+			item.classList.remove('hide');
+		        setTimeout(() => {
+        		        item.children[0].classList.add("opacityZero");
+	                	item.children[1].classList.add("opacityZero");
+        		}, 500);
+		}, 900);
+		return;
+	}
     item.classList.remove('hide');
+	setTimeout(() => {
+		item.children[0].classList.add("opacityZero");
+		item.children[1].classList.add("opacityZero");
+	}, 500);
 }
 const onStart = function () {
     for (const card of document.getElementsByClassName('card'))
@@ -20,7 +38,10 @@ const showSection = function (id, mobile = false) {
     }
     if (!mobile)
         onStart();
-    show(active);
+
+	//console.log(active.children[3].);
+    const isFirstStart = currActive === null;
+    show(active, isFirstStart);
     currActive = id;
 }
 const showMobileSection = function (id) {
