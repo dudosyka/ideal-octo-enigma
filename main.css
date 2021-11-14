@@ -122,19 +122,20 @@ body > main {
     margin-top: 200px;
     display: flex;
     flex-direction: column;
-    border-radius: 15px;
     padding: 30px;
-    box-shadow: 0 0 2px #e7e7e7;
     transition-duration: 0.9s;
     transition-property: opacity;
     position: relative;
     top: 0;
     left: 0;
     z-index: 2;
-    background-color: rgba(231,231,231,0.8);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur( 10px );
     opacity: 0;
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 .pc .card-body {
     transform: rotate(-5deg);
@@ -324,6 +325,7 @@ body > main {
 	opacity: 1 !important;
 }
 
+
 .wave,
 .wave::before,
 .wave::after {
@@ -331,9 +333,9 @@ body > main {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 250vw;
-  height: 250vw;
-  margin-left: -125vw;
+  width: 110vw;
+  height: 110vw;
+  margin-left: -55vw;
   transform-origin: 50% 50%;
   background-color: transparent;
   border-radius: 38% 42%;
@@ -345,7 +347,7 @@ body > main {
 .wave::before {
   width: 105%;
   height: 95%;
-  margin-top: -125vw;
+  margin-top: -55vw;
   transform-origin: 49% 51%;
   border-radius: 40% 38%;
   box-shadow: inset 0 0 10vw rgba(255,0,0,0.8);
@@ -355,7 +357,7 @@ body > main {
 .wave::after {
   width: 102%;
   height: 98%;
-  margin-top: -125vw;
+  margin-top: -55vw;
   transform-origin: 51% 49%;
   border-radius: 48% 42%;
   box-shadow: inset 0 0 10vw rgba(1,1,1,0.8);
