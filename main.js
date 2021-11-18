@@ -47,9 +47,6 @@ const showSection = function (id, mobile = false) {
     show(active, isFirstStart);
     currActive = id;
 }
-const showMobileSection = function (id) {
-    showSection(id, true);
-}
 
 const data = {
     [1]: {
@@ -81,4 +78,24 @@ const copyContact = function (id, type = false) {
 const hideModal = function () {
     const modal = document.getElementById('modal');
     modal.classList.add('hide-modal');
+}
+
+const hideMobile = function (item) {
+    item.classList.add('hide');
+}
+const showMobile = function (item) {
+    item.classList.remove('hide');
+}
+
+const showMobileSection = function (id) {
+
+    const active = document.getElementById(`secMob${id}`);
+
+    if (currActive !== null) {
+        const curr = document.getElementById(`secMob${currActive}`);
+        hideMobile(curr);
+    }
+
+    showMobile(active);
+    currActive = id;
 }

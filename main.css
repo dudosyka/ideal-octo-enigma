@@ -16,8 +16,8 @@ body > main {
     display: flex;
     width: 60%;
     transition-duration: 0.5s;
-    /*background: linear-gradient(357.37deg, #DDDDDD 32.58%, #E8E8E8 94.87%);
-    background-image: url('');
+    /*background: linear-gradient(357.37deg, #DDDDDD 32.58%, #E8E8E8 94.87%);*/
+    /*background-image: url('');
     background-size: cover;
     background-position: 50% 50%;
     background-repeat: no-repeat;*/
@@ -140,6 +140,13 @@ body > main {
 .pc .card-body {
     transform: rotate(-5deg);
 }
+.mobile .card-body {
+    opacity: 1;
+    align-self: auto;
+    left: 4%;
+    transition-duration: 0.3s;
+    transition-property: left;
+}
 .card-red .card-body {
     background-color: rgba(206, 0, 32, 0.8);
     color: white;
@@ -227,6 +234,7 @@ body > main {
     transition-duration: 0.5s;
     top: -200vh;
 }
+
 .hide .title {
     display: block;
     font-size: 3.5vh;
@@ -248,6 +256,15 @@ body > main {
     top: 66vh;
 }
 
+.pc .hide .title:hover {
+    font-size: 4.5vh;
+    top: 64vh;
+}
+
+/*main > .pc .hide .title:hover {*/
+/*    background-color: rgba(2,2,2,0.6);*/
+/*}*/
+
 .mobile .hide .title {
     top: 7vh;
     right: 52%;
@@ -267,6 +284,12 @@ body > main {
 }
 
 @media screen and (max-width: 1569px) {
+    html {
+        width: 140%;
+    }
+    .wave {
+        display: none;
+    }
     body {
         overflow: auto;
 	    font-family: Noto Sans, sans-serif !important;
