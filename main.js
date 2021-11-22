@@ -39,6 +39,7 @@ const showSection = function (id, mobile = false) {
         const curr = document.getElementById(mobile ? `secMob${currActive}` : `sec${currActive}`);
         hide(curr, mobile);
     }
+
     if (!mobile)
         onStart();
 

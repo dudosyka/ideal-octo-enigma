@@ -291,9 +291,6 @@ body > main {
 }
 
 @media screen and (max-width: 1569px) {
-    html {
-        width: 140%;
-    }
     .wave {
         display: none;
     }
@@ -306,6 +303,12 @@ body > main {
     }
     .mobile {
         display: flex;
+    }
+}
+
+@media handheld and (max-width: 1569px) {
+    html {
+        width: 140%;
     }
 }
 
