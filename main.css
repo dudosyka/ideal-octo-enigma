@@ -14,7 +14,7 @@ body > main {
 }
 .card {
     display: flex;
-    width: 60%;
+    width: 80%;
     transition-duration: 0.5s;
     /*background: linear-gradient(357.37deg, #DDDDDD 32.58%, #E8E8E8 94.87%);*/
     /*background-image: url('');
@@ -49,7 +49,7 @@ body > main {
     align-self: center;
 }
 .hide {
-    width: 20% !important;
+    width: 10% !important;
     cursor: pointer;
 }
 .mobile .hide {
@@ -59,9 +59,9 @@ body > main {
     width: 50% !important;
 }
 .card-red {
-	background: linear-gradient(
-357.39deg
-, #8B0116 4.72%, #CE0020 95.18%);
+    background: linear-gradient(
+        357.39deg
+        , #343434 4.72%, #727272 95.18%);
     /*background-color: #8B0116;*/
 }
 .card-header {
@@ -107,8 +107,8 @@ body > main {
     font-family: Noto Sans, sans-serif;
     font-style: normal;
     font-weight: bold;
-    font-size: 20px;
-    line-height: 33px;
+    font-size: 15px;
+    line-height: 17px;
     margin-left: 2%;
     transition-duration: 0.5s;
     top: 53px !important;
@@ -122,7 +122,7 @@ body > main {
 .card-body {
     width: 80%;
     align-self: center;
-    margin-top: 200px;
+    margin-top: 8vh;
     display: flex;
     flex-direction: column;
     padding: 30px;
@@ -133,13 +133,22 @@ body > main {
     left: 0;
     z-index: 2;
     opacity: 0;
-    background: rgba( 255, 255, 255, 0.25 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    background: rgba( 255, 255, 255, 0.6 );
+    box-shadow: 0 8px 32px 0 rgba(143, 143, 143, 0.37);
     backdrop-filter: blur( 4px );
     -webkit-backdrop-filter: blur( 4px );
     border-radius: 10px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
+
+#sec1 .card-body {
+    margin-top: 11vh;
+}
+
+#sec2 .card-body {
+    margin-top: 15vh;
+}
+
 .pc .card-body {
     transform: rotate(-5deg);
 }
@@ -152,7 +161,7 @@ body > main {
     margin-top: 0;
 }
 .card-red .card-body {
-    background-color: rgba(206, 0, 32, 0.8);
+    background-color: rgba(104, 104, 104, 0.8);
     color: white;
     box-shadow: none;
 }
@@ -290,7 +299,27 @@ body > main {
     right: 53%;
 }
 
-@media screen and (max-width: 1569px) {
+@media screen and (max-width: 1570px) {
+    .big-title {
+        font-size: 150px;
+    }
+
+    .middle {
+        font-size: 30px;
+        top: 38px;
+    }
+
+    .card-body article {
+        font-size: 15px;
+    }
+
+    .card-body {
+        padding: 18px;
+        margin-top: 13vh !important;
+    }
+}
+
+@media screen and (max-width: 1300px) {
     .wave {
         display: none;
     }
@@ -303,6 +332,12 @@ body > main {
     }
     .mobile {
         display: flex;
+    }
+}
+
+@media screen and (max-width: 1690px) {
+    .card-body {
+        margin-top: 6vh;
     }
 }
 
