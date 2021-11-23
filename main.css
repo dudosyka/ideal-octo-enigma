@@ -142,7 +142,7 @@ body > main {
 }
 
 #sec1 .card-body {
-    margin-top: 11vh;
+    margin-top: 13vh;
 }
 
 #sec2 .card-body {
@@ -300,20 +300,20 @@ body > main {
 }
 
 @media screen and (max-width: 1570px) {
-    .big-title {
+    .pc .big-title {
         font-size: 150px;
     }
 
-    .middle {
+    .pc .middle {
         font-size: 30px;
         top: 38px;
     }
 
-    .card-body article {
+    .pc .card-body article {
         font-size: 15px;
     }
 
-    .card-body {
+    .pc .card-body {
         padding: 18px;
         margin-top: 13vh !important;
     }
