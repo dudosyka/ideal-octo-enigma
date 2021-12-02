@@ -28,6 +28,29 @@ const onStart = function () {
         if (currActive === null)
             card.classList.remove('onstart');
 }
+
+const krestik_function = function () {
+    currActive = null;
+    for (const card of document.getElementsByClassName('card')) {
+        card.classList.add('onstart');
+        card.classList.add('hide');
+    }
+}
+
+const expand_popover = function (id, mob = false) {
+    let selector = `popover${id}`;
+    if (mob) {
+        selector = `popover_mob${id}`;
+    }
+    const popover_content = document.getElementById(selector);
+    console.log(popover_content.classList.value);
+    if ( popover_content.classList.value  == "popover popover_visible" ) {
+        popover_content.classList.remove('popover_visible');
+    } else {
+        popover_content.classList.add('popover_visible');
+    }
+}
+
 const showSection = function (id, mobile = false) {
     if (currActive == id) {
         return;
@@ -95,3 +118,21 @@ const showMobileSection = function (id) {
     showMobile(active);
     currActive = id;
 }
+
+document.addEventListener("DOMContentLoaded", function() {
+    document.getElementById("pc_block").classList.add("hide_all");
+    document.getElementById("mobile_block").classList.add("hide_all");
+    setTimeout(() => {
+        document.getElementById("eggs").classList.add("hide_eggs");
+        document.getElementById("shit").classList.remove('hide_eggs');
+        setTimeout(() => {
+            document.getElementById("shit").classList.add('hide_shit');
+            setTimeout(() => {
+                document.getElementById("loader").classList.add("hide_all");
+                document.getElementById("loader").classList.add('none_dis')
+                document.getElementById("pc_block").classList.remove("hide_all");
+                document.getElementById("mobile_block").classList.remove("hide_all");
+            }, 300);
+        }, 1000);
+    }, 1500);
+});

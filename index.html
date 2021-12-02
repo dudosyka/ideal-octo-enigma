@@ -6,7 +6,7 @@
     <title>ПИАР РЕКЛАМА МАРКЕТИНГ</title>
     <link rel="stylesheet" href="./main.css">
     <link rel="stylesheet" href="./particles/particlesJs.css">
-
+    <link rel="stylesheet" href="./fontawesome-free-5.15.4-web/css/all.css">
     <script src="./main.js"></script>
 </head>
 <body>
@@ -14,11 +14,18 @@
     <!-- div id="particles-js"></div -->
 
     <!--div class='wave'></div -->
-
-    <main class="pc">
-        <section id="sec1" class="onstart card hide" onclick="showSection(1)">
-            <main class="card-body">
-                <header class="card-header">
+    <div id="loader">
+        <div class="load" id="eggs">
+            <hr/><hr/><hr/><hr/>
+        </div>
+        <div class="load hide_eggs" id="shit">
+            <img src="logo.png">
+        </div>
+    </div>
+    <main id="pc_block" class="pc hide_all">
+        <section id="sec1" class="onstart card hide">
+            <main class="card-body" >
+                <header class="card-header" onclick="krestik_function()">
                     <div class="big-title">
                         <div>P</div>
                         <div class="middle">R</div>
@@ -26,7 +33,7 @@
                     </div>
                 </header>
                 <header>Услуги</header>
-                <article>
+                <article onclick="krestik_function()">
                     <ul>
                         <li>Разработка концепций и стратегий PR-деятельности организаций на долгосрочный и краткосрочный периоды;</li>
                         <li>Разработка стратегий рекламной и PR-поддержки новых продуктов, проектов, брендов, услуг, компаний;</li>
@@ -37,19 +44,20 @@
                     </ul>
                 </article>
                 <footer>
-                    <div class="contact" onclick="copyContact(2, true)">
-                        <div class="icon">Контакты</div>
+                    <div class="contact">
+                        <span onclick="expand_popover(1)">Контакты</span>
+                        <div class="popover" id="popover1"><i class="fas fa-envelope-square"></i> <a href="mailto:pr@prm-art.com">pr@prm-art.com</a><br><br><i class="fas fa-phone"></i> <a href=":tel+79110885758">+7(911)-088-57-58</a></div>
                     </div>
                 </footer>
             </main>
-            <div class="title">
+            <div class="title" onclick="showSection(1)">
                 <div>PR</div>
             </div>
 	        <div class='blur'></div>
         </section>
-        <section id="sec2" class="onstart card card-red hide" onclick="showSection(2)" >
+        <section id="sec2" class="onstart card card-red hide"  >
             <main class="card-body">
-                <header class="card-header">
+                <header onclick="krestik_function()" class="card-header">
                     <div class="big-title middle-item">
                         <div>R</div>
                         <div class="middle">eklama</div>
@@ -59,8 +67,8 @@
                     </div>
                     <!--                <div class="sub-title"></div>-->
                 </header>
-                <header>Услуги</header>
-                <article>
+                <header onclick="krestik_function()">Услуги</header>
+                <article onclick="krestik_function()">
                     <ul>
                         <li>Рекламный консалтинг;</li>
                         <li>Размещение рекламы;</li>
@@ -73,25 +81,26 @@
                     </ul>
                 </article>
                 <footer>
-                    <div class="contact" onclick="copyContact(2, true)">
-                        <div class="icon">Контакты</div>
+                    <div class="contact">
+                        <span onclick="expand_popover(2)">Контакты</span>
+                        <div class="popover" id="popover2"><i class="fas fa-envelope-square"></i> <a href="mailto:reklama@prm-art.com">reklama@prm-art.com</a><br><br><i class="fas fa-phone"></i> <a href=":tel+79110885758">+7(911)-088-57-58</a></div>
                     </div>
                 </footer>
             </main>
-            <div class="title"><div>Reklama</div></div>
+            <div class="title" onclick="showSection(2)"><div>Reklama</div></div>
 	        <div class="blur"></div>
         </section>
-        <section id="sec3" class="onstart card hide" onclick="showSection(3)">
+        <section id="sec3" class="onstart card hide">
             <main class="card-body">
-                <header class="card-header">
+                <header onclick="krestik_function()" class="card-header">
                     <div class="big-title">
                         <div>M</div>
                         <div class="middle">arketing</div>
                         <div class="small">система управления, регулирования и изучения рынка.</div>
                     </div>
                 </header>
-                <header>Услуги</header>
-                <article>
+                <header onclick="krestik_function()">Услуги</header>
+                <article onclick="krestik_function()">
                     <ul>
                         <li>Разработка маркетинговой стратегии;</li>
                         <li>Маркетинговые исследования;</li>
@@ -108,24 +117,25 @@
                     </ul>
                 </article>
                 <footer>
-                    <div class="contact" onclick="copyContact(2, true)">
-                        <div class="icon">Контакты</div>
+                    <div class="contact">
+                        <span onclick="expand_popover(3)">Контакты</span>
+                        <div class="popover" id="popover3"><i class="fas fa-envelope-square"></i> <a href="mailto:marketing@prm-art.com">marketing@prm-art.com</a><br><br><i class="fas fa-phone"></i> <a href=":tel+79110885758">+7(911)-088-57-58</a></div>
                     </div>
                 </footer>
             </main>
-            <div class="title"><div>Marketing</div></div>
+            <div class="title" onclick="showSection(3)"><div>Marketing</div></div>
 	        <div class="blur"></div>
         </section>
     </main>
-    <main class="mobile">
-        <section id="secMob1" class="onstart card hide" onclick="showMobileSection(1)">
+    <main id="mobile_block" class="mobile hide_all">
+        <section id="secMob1" class="onstart card hide">
             <div class="flex_col">
                 <main class="card-body">
-                    <header class="card-header">
+                    <header onclick="krestik_function()" class="card-header">
                         <div class="big-title"><div>P</div><div class="middle">R</div><div class="small">искусство и наука достижения гармонии с внешним окружением.</div></div>
                     </header>
-                    <header>Услуги</header>
-                    <article>
+                    <header onclick="krestik_function()">Услуги</header>
+                    <article onclick="krestik_function()">
                         <ul>
                             <li>Разработка концепций и стратегий PR-деятельности организаций на долгосрочный и краткосрочный периоды;</li>
                             <li>Разработка стратегий рекламной и PR-поддержки новых продуктов, проектов, брендов, услуг, компаний;</li>
@@ -136,18 +146,19 @@
                         </ul>
                     </article>
                     <footer>
-                        <div class="contact" onclick="copyContact(2, true)">
-                            <div class="icon"></div>
+                        <div class="contact">
+                            <span onclick="expand_popover(1, true)">Контакты</span>
+                            <div class="popover" id="popover_mob1"><i class="fas fa-envelope-square"></i> <a href="mailto:pr@prm-art.com">pr@prm-art.com</a><br><br><i class="fas fa-phone"></i> <a href=":tel+79110885758">+7(911)-088-57-58</a></div>
                         </div>
                     </footer>
                 </main>
             </div>
-            <div class="title">P</div>
+            <div class="title" onclick="showMobileSection(1)">P</div>
         </section>
-        <section id="secMob2" class="card card-red hide" onclick="showMobileSection(2)">
+        <section id="secMob2" class="card card-red hide">
             <div class="flex_col">
                 <main class="card-body">
-                    <header class="card-header">
+                    <header onclick="krestik_function()" class="card-header">
                         <div class="big-title middle-item">
                             <div>R</div>
                             <div class="middle">eklama</div>
@@ -156,8 +167,8 @@
                             </div>
                         </div>
                     </header>
-                    <header>Услуги</header>
-                    <article>
+                    <header onclick="krestik_function()">Услуги</header>
+                    <article onclick="krestik_function()">
                     <ul>
                         <li>Рекламный консалтинг;</li>
                         <li>Размещение рекламы;</li>
@@ -170,26 +181,27 @@
                     </ul>
                 </article>
                     <footer>
-                        <div class="contact" onclick="copyContact(2)">
-                            <div class="icon"></div>
+                        <div class="contact">
+                            <span onclick="expand_popover(2, true)">Контакты</span>
+                            <div class="popover" id="popover_mob2"><i class="fas fa-envelope-square"></i> <a href="mailto:reklama@prm-art.com">reklama@prm-art.com</a><br><br><i class="fas fa-phone"></i> <a href=":tel+79110885758">+7(911)-088-57-58</a></div>
                         </div>
-                </footer>
+                    </footer>
             </main>
             </div>
-            <div class="title">R</div>
+            <div class="title" onclick="showMobileSection(2)">R</div>
         </section>
-        <section id="secMob3" class="card hide" onclick="showMobileSection(3)">
+        <section id="secMob3" class="card hide">
             <div class="flex_col">
                 <main class="card-body">
-                    <header class="card-header">
+                    <header onclick="krestik_function()" class="card-header">
                         <div class="big-title">
                             <div>M</div>
                             <div class="middle">arketing</div>
                             <div class="small">система управления, регулирования и изучения рынка.</div>
                         </div>
                     </header>
-                    <header>Услуги</header>
-                    <article>
+                    <header onclick="krestik_function()">Услуги</header>
+                    <article onclick="krestik_function()"`>
                         <ul>
                             <li>Разработка маркетинговой стратегии;</li>
                             <li>Маркетинговые исследования;</li>
@@ -206,13 +218,14 @@
                         </ul>
                     </article>
                     <footer>
-                        <div class="contact" onclick="copyContact(2, true)">
-                            <div class="icon"></div>
+                        <div class="contact">
+                            <span onclick="expand_popover(3, true)">Контакты</span>
+                            <div class="popover" id="popover_mob3"><i class="fas fa-envelope-square"></i> <a href="mailto:marketing@prm-art.com">marketing@prm-art.com</a><br><br><i class="fas fa-phone"></i> <a href=":tel+79110885758">+7(911)-088-57-58</a></div>
                         </div>
                     </footer>
                 </main>
             </div>
-            <div class="title">M</div>
+            <div class="title" onclick="showMobileSection(3)">M</div>
         </section>
     </main>
 

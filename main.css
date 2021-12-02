@@ -12,8 +12,10 @@ body > main {
     /*background: linear-gradient(357.37deg, #DDDDDD 32.58%, #E8E8E8 94.87%);*/
     background: linear-gradient(
             357.39deg
-            , #343434 4.72%, #727272 95.18%);
+            ,#343a40  4.72%, #4f5861 95.18%);
     min-width: 100%;
+    transition-duration: 0.3s;
+    opacity: 1;
 }
 .card {
     display: flex;
@@ -56,7 +58,7 @@ body > main {
     cursor: pointer;
 }
 .mobile .hide {
-    height: 20vh !important;
+    height: 31.67vh !important;
 }
 .onstart {
     width: 50% !important;
@@ -80,7 +82,7 @@ body > main {
     /*transform: rotate(-5deg);*/
 }
 .big-title {
-    color: #8B0116;
+    color: #9a9a9a;
     font-size: 200px;
     font-weight: bold;
     font-family: Noto Sans, sans-serif;
@@ -134,8 +136,7 @@ body > main {
     left: 0;
     z-index: 2;
     opacity: 0;
-    border-radius: 10px;
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    color: white !important;
 }
 
 #sec1 .card-body {
@@ -158,7 +159,6 @@ body > main {
     margin-top: 0;
 }
 .card-red .card-body {
-    background-color: rgba(104, 104, 104, 0.8);
     color: white;
     box-shadow: none;
 }
@@ -201,7 +201,6 @@ body > main {
     font-weight: bold;
     padding: 10px;
     border-radius: 30px;
-    background: linear-gradient(357.39deg, #8B0116 4.72%, #CE0020 95.18%);
     cursor: pointer;
 }
 
@@ -235,7 +234,7 @@ body > main {
 .hide .title {
     display: block;
     font-size: 3.5vh;
-    color: #8B0116;
+    color: #9a9a9a;
     font-weight: bold;
     font-family: Noto Sans, sans-serif;
     position: relative;
@@ -263,9 +262,10 @@ body > main {
 /*}*/
 
 .mobile .hide .title {
-    top: 7vh;
+    top: 10vh;
     right: 52%;
     width: 60px !important;
+    font-size: 8.5vh;
 }
 
 .card-red .title {
@@ -418,4 +418,130 @@ body > main {
 }
 
 
+footer > i {
+    font-size: 50px !important;
+    cursor: pointer;
+}
+
+
+.contact span {
+    border: 4px solid white;
+    border-radius: 65px;
+    font-size: 22px;
+    margin-right: 37px;
+    padding: 15px 25px;
+}
+/* POPOVER (KPOP) */
+.popover {background-color: white;
+    padding: 20px;
+    margin-top: 25px;
+    margin-left: -37px;
+    transition-duration: 0.3s;
+    opacity: 0;
+    border-radius: 20px;
+    color: #4f4343;
+}
+
+.popover i {
+    font-size: 22px;
+}
+
+.popover a {
+    color: #312a2a;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.popover a:hover {
+    text-decoration: underline;
+}
+
+.popover_visible {
+    opacity: 1;
+}
+
+
+
+
+
+
+
+/* PRM shit */
+
+#loader {
+    background: linear-gradient(
+        357.39deg ,#343a40 4.72%, #4f5861 95.18%);
+    width: 100%;
+    height: 100vh;
+    opacity: 1;
+    transition-duration: 0.3s;
+}
+
+#eggs {
+    opacity: 1;
+    transition-duration: 0.3s;
+}
+
+#shit {
+    opacity: 1;
+    transition-duration: 0.3s;
+    position: absolute;
+    width: 20%;
+    height: auto;
+    background: none;
+    bottom: 200px;
+}
+#shit img {
+    width: 100%;
+    position:absolute;
+}
+
+#shit :first-child {
+    background: none;
+}
+
+#shit :last-child {
+    background: none;
+}
+
+.hide_shit {
+    opacity: 0 !important;
+}
+
+.hide_eggs {
+    opacity: 0 !important;
+}
+
+.hide_all {
+    opacity: 0 !important;
+    display: none;
+}
+
+.none_dis {
+    display: none !important;
+}
+
+.load{position:absolute;top:50%;left:50%;transform:translate(-50%, -50%);
+    /*change these sizes to fit into your project*/
+    width:100px;
+    height:100px;
+}
+.load hr{border:0;margin:0;width:40%;height:40%;position:absolute;border-radius:50%;animation:spin 2s ease infinite}
+
+.load :first-child{background: #8b0116;animation-delay:-1.5s}
+.load :nth-child(2){background: #342f2d;animation-delay:-1s}
+.load :nth-child(3){background: #595856;animation-delay:-0.5s}
+.load :last-child{background: #eaeced
+}
+
+
+
+
+
+@keyframes spin{
+    0%,100%{transform:translate(0)}
+    25%{transform:translate(160%)}
+    50%{transform:translate(160%, 160%)}
+    75%{transform:translate(0, 160%)}
+}
 
