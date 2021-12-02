@@ -64,12 +64,7 @@ const copyContact = function (id, type = false) {
     const modal = document.getElementById('modal');
     let insert = ``;
 
-    if (type === true) {
-        insert = `<h3>Телефон: </h3><br><a href=":tel+79110885758">+7(911)-088-57-58</a>`;
-    }
-    else {
-        insert = `<h3>Электронная почта: </h3><br><a href="mailto:${data[id].email}">${data[id].email}</a>`;
-    }
+    insert = `<h3>Телефон: </h3><br><a href=":tel+79110885758">+7(911)-088-57-58</a><br><h3>Электронная почта: </h3><br><a href="mailto:${data[id].email}">${data[id].email}</a>`;
 
     modal.classList.remove('hide-modal');
 
