@@ -179,8 +179,7 @@ html {
     font-family: Roboto, sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 24px;
-    line-height: 28px;
+    font-size: 18px;
     color: white
 }
 .slide > p {
@@ -188,8 +187,7 @@ html {
     font-family: Roboto, sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 20px;
-    line-height: 23px;
+    font-size: 15px;
     color: white;
 }
 
@@ -199,7 +197,7 @@ html {
     font-family: Roboto, sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 16px;
+    font-size: 12px;
     line-height: 19px;
     color: #FFFFFF;
 }
@@ -209,6 +207,11 @@ html {
     flex-direction: column;
     width: 33.3%;
 }
+
+.slide article .col {
+    height: 10px;    
+}
+
 
 .slider-dots {
     display: flex;
