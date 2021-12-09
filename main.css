@@ -182,12 +182,23 @@ html {
     margin-top: 90px;
 }
 
+
 main .logo {
     display: flex;
     flex-direction: row;
     margin-left: 30px;
     height: 109px;
     position: absolute;
+    z-index: 3;
+}
+
+.z-index-1 {
+    display: none !important;
+    z-index: 1 !important;
+}
+
+.z-index-2 {
+    z-index: 2 !important;
 }
 
 .header-dots {
