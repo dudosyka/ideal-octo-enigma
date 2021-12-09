@@ -39,8 +39,8 @@ const dotsStyler = function () {
 }
 
 $(document).ready(function(){
-    $("#logo2").fadeOut();
-    $("#logo3").fadeOut();
+    $("#logo2").fadeOut(0);
+    $("#logo3").fadeOut(0);
     $(".next").click(function(){
         hsuma += -100;
         dotsStyler();
