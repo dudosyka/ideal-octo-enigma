@@ -1,241 +1,256 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- base href="https://prm-art.com" -->
     <meta charset="UTF-8">
-    <title>ПИАР РЕКЛАМА МАРКЕТИНГ</title>
-    <link rel="stylesheet" href="./main.css">
-    <link rel="stylesheet" href="./particles/particlesJs.css">
-    <link rel="stylesheet" href="./fontawesome-free-5.15.4-web/css/all.css">
-    <script src="./main.js"></script>
+    <title>Title</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="./old/fontawesome-free-5.15.4-web/css/all.css">
 </head>
 <body>
-    <!-- particles.js container -->
-    <!-- div id="particles-js"></div -->
-
-    <!--div class='wave'></div -->
-    <div id="loader">
-        <div class="load" id="eggs">
-            <hr/><hr/><hr/><hr/>
-        </div>
-        <div class="load hide_eggs" id="shit">
-            <img src="logo.png">
-        </div>
-    </div>
-    <main id="pc_block" class="pc hide_all">
-        <section id="sec1" class="onstart card hide">
-            <main class="card-body" >
-                <header class="card-header" onclick="krestik_function()">
-                    <div class="big-title">
-                        <div>P</div>
-                        <div class="middle">R</div>
-                        <div class="small">искусство и наука достижения гармонии с внешним окружением.</div>
-                    </div>
-                </header>
-                <header>Услуги</header>
-                <article onclick="krestik_function()">
-                    <ul>
-                        <li>Разработка концепций и стратегий PR-деятельности организаций на долгосрочный и краткосрочный периоды;</li>
-                        <li>Разработка стратегий рекламной и PR-поддержки новых продуктов, проектов, брендов, услуг, компаний;</li>
-                        <li>Разработка стратегий личностного позиционирования и продвижения;</li>
-                        <li>Поиск нестандартных решений для продвижения и позиционирования компании;</li>
-                        <li>Оперативный контроль позиционирования компаний и ее первых лиц;</li>
-                        <li>Корректировка PR-позиционирования.</li>
-                    </ul>
-                </article>
-                <footer>
-                    <div class="contact">
-                        <span onclick="expand_popover(1)">Контакты</span>
-                        <div class="popover" id="popover1"><i class="fas fa-envelope-square"></i> <a href="mailto:pr@prm-art.com">pr@prm-art.com</a><br><br><i class="fas fa-phone"></i> <a href=":tel+79110885758">+7(911)-088-57-58</a></div>
-                    </div>
-                </footer>
-            </main>
-            <div class="title" onclick="showSection(1)">
-                <div>PR</div>
+    <div class="wrap">
+        <header>
+            <div class="logo">
+                <img src="Header/Logo.png" alt="LOGO">
             </div>
-	        <div class='blur'></div>
-        </section>
-        <section id="sec2" class="onstart card card-red hide"  >
-            <main class="card-body">
-                <header onclick="krestik_function()" class="card-header">
-                    <div class="big-title middle-item">
-                        <div>R</div>
-                        <div class="middle">eklama</div>
-                        <div class="small">
-                            информация, распространенная любым способом, в любой форме и с использованием любых средств, адресованная неопределенному кругу лиц и направленная на привлечение внимания к объекту рекламирования.
-                        </div>
-                    </div>
-                    <!--                <div class="sub-title"></div>-->
-                </header>
-                <header onclick="krestik_function()">Услуги</header>
-                <article onclick="krestik_function()">
-                    <ul>
-                        <li>Рекламный консалтинг;</li>
-                        <li>Размещение рекламы;</li>
-                        <li>Разработка концепций рекламных кампаний;</li>
-                        <li>Рекламное планирование и бюджетирование;</li>
-                        <li>Корректировка и оптимизация рекламных кампаний и бюджетов;</li>
-                        <li>Дизайн и создание эффективной рекламы любых видов;</li>
-                        <li>Контроль эффективности рекламных кампаний;</li>
-                        <li>Медиапланирование;</li>
-                    </ul>
-                </article>
-                <footer>
-                    <div class="contact">
-                        <span onclick="expand_popover(2)">Контакты</span>
-                        <div class="popover" id="popover2"><i class="fas fa-envelope-square"></i> <a href="mailto:reklama@prm-art.com">reklama@prm-art.com</a><br><br><i class="fas fa-phone"></i> <a href=":tel+79110885758">+7(911)-088-57-58</a></div>
-                    </div>
-                </footer>
-            </main>
-            <div class="title" onclick="showSection(2)"><div>Reklama</div></div>
-	        <div class="blur"></div>
-        </section>
-        <section id="sec3" class="onstart card hide">
-            <main class="card-body">
-                <header onclick="krestik_function()" class="card-header">
-                    <div class="big-title">
-                        <div>M</div>
-                        <div class="middle">arketing</div>
-                        <div class="small">система управления, регулирования и изучения рынка.</div>
-                    </div>
-                </header>
-                <header onclick="krestik_function()">Услуги</header>
-                <article onclick="krestik_function()">
-                    <ul>
-                        <li>Разработка маркетинговой стратегии;</li>
-                        <li>Маркетинговые исследования;</li>
-                        <li>Медиапланирование;</li>
-                        <li>Анализ рынка конкурентов;</li>
-                        <li>Маркетинговый аудит;</li>
-                        <li>Аутсорсинг маркетинга;</li>
-                        <li>Разработка стратегии продаж и маркетинга;</li>
-                        <li>Разработка стратегии развития малого и среднего бизнеса;</li>
-                        <li>Стратегия развития филиальной и дилерской сети;</li>
-                        <li>Аутсорсинг отдела продаж;</li>
-                        <li>Создание бренда с «0»;</li>
-                        <li>Подбор персонала.</li>
-                    </ul>
-                </article>
-                <footer>
-                    <div class="contact">
-                        <span onclick="expand_popover(3)">Контакты</span>
-                        <div class="popover" id="popover3"><i class="fas fa-envelope-square"></i> <a href="mailto:marketing@prm-art.com">marketing@prm-art.com</a><br><br><i class="fas fa-phone"></i> <a href=":tel+79110885758">+7(911)-088-57-58</a></div>
-                    </div>
-                </footer>
-            </main>
-            <div class="title" onclick="showSection(3)"><div>Marketing</div></div>
-	        <div class="blur"></div>
-        </section>
-    </main>
-    <main id="mobile_block" class="mobile hide_all">
-        <section id="secMob1" class="onstart card hide">
-            <div class="flex_col">
-                <main class="card-body">
-                    <header onclick="krestik_function()" class="card-header">
-                        <div class="big-title"><div>P</div><div class="middle">R</div><div class="small">искусство и наука достижения гармонии с внешним окружением.</div></div>
-                    </header>
-                    <header onclick="krestik_function()">Услуги</header>
-                    <article onclick="krestik_function()">
-                        <ul>
-                            <li>Разработка концепций и стратегий PR-деятельности организаций на долгосрочный и краткосрочный периоды;</li>
-                            <li>Разработка стратегий рекламной и PR-поддержки новых продуктов, проектов, брендов, услуг, компаний;</li>
-                            <li>Разработка стратегий личностного позиционирования и продвижения;</li>
-                            <li>Поиск нестандартных решений для продвижения и позиционирования компании;</li>
-                            <li>Оперативный контроль позиционирования компаний и ее первых лиц;</li>
-                            <li>Корректировка PR-позиционирования.</li>
-                        </ul>
-                    </article>
-                    <footer>
-                        <div class="contact">
-                            <span onclick="expand_popover(1, true)">Контакты</span>
-                            <div class="popover" id="popover_mob1"><i class="fas fa-envelope-square"></i> <a href="mailto:pr@prm-art.com">pr@prm-art.com</a><br><br><i class="fas fa-phone"></i> <a href=":tel+79110885758">+7(911)-088-57-58</a></div>
-                        </div>
-                    </footer>
-                </main>
+            <div class="login-btn">
+                <div class="login-btn"><span>Личный кабинет</span></div>
             </div>
-            <div class="title" onclick="showMobileSection(1)">P</div>
-        </section>
-        <section id="secMob2" class="card card-red hide">
-            <div class="flex_col">
-                <main class="card-body">
-                    <header onclick="krestik_function()" class="card-header">
-                        <div class="big-title middle-item">
-                            <div>R</div>
-                            <div class="middle">eklama</div>
-                            <div class="small">
-                                информация, распространенная любым способом, в любой форме и с использованием любых средств, адресованная неопределенному кругу лиц и направленная на привлечение внимания к объекту рекламирования.
+        </header>
+        <main>
+            <section class="vertical-dots-box">
+                <img src="main/vertical_dots.png" src="VERTICAL_DOTS">
+            </section>
+            <section class="slider-box">
+                <div class="horizontal-slider">
+                    <ul class="h-items">
+                        <li>
+                            <div class="slide">
+                                <div class="logo">
+                                    <div class="name">
+                                        <img src="main/First/p.png" alt="P">
+                                        <img src="main/First/rm.png" alt="RM">
+                                    </div>
+                                    <div class="header-dots">
+                                        <img src="./main/horizontal_dots.png" alt="HORIZONTAL_DOTS">
+                                    </div>
+                                </div>
+                                <div class="title">
+                                    <p>Искусство и наука достижения гармонии с внешним окружением.</p>
+                                </div>
+                                <p>
+                                    Услуги:
+                                </p>
+                                <article>
+                                    <div class="col">
+                                        <p>
+                                            Разработка концепций и стратегий PR-деятельности организаций на долгосрочный и краткосрочный периоды
+                                        </p>
+                                        <p>
+                                            Поиск нестандартных решений для продвижения и позиционирования компании;
+                                        </p>
+                                    </div>
+                                    <div class="col">
+                                        <p>
+                                            Разработка стратегий рекламной и PR-поддержки новых продуктов, проектов, брендов, услуг, компаний
+                                        </p>
+                                        <p>
+                                            Оперативный контроль позиционирования компаний и ее первых лиц;
+                                        </p>
+                                    </div>
+                                    <div class="col">
+                                        <p>
+                                            Разработка стратегий личностного позиционирования и продвижения;
+                                        </p>
+                                        <p>
+                                            Корректировка PR-позиционирования.
+                                        </p>
+                                    </div>
+                                </article>
                             </div>
-                        </div>
-                    </header>
-                    <header onclick="krestik_function()">Услуги</header>
-                    <article onclick="krestik_function()">
-                    <ul>
-                        <li>Рекламный консалтинг;</li>
-                        <li>Размещение рекламы;</li>
-                        <li>Разработка концепций рекламных кампаний;</li>
-                        <li>Рекламное планирование и бюджетирование;</li>
-                        <li>Корректировка и оптимизация рекламных кампаний и бюджетов;</li>
-                        <li>Дизайн и создание эффективной рекламы любых видов;</li>
-                        <li>Контроль эффективности рекламных кампаний;</li>
-                        <li>Медиапланирование;</li>
+                        </li>
+                        <li>
+                            <div class="slide">
+                                <div class="logo">
+                                    <div class="name">
+                                        <img src="main/Second/p.png" alt="P">
+                                        <img src="main/Second/r.png" alt="P">
+                                        <img src="main/Second/m.png" alt="RM">
+                                    </div>
+                                    <div class="header-dots">
+                                        <img src="./main/horizontal_dots.png" alt="HORIZONTAL_DOTS">
+                                    </div>
+                                </div>
+                                <div class="title">
+                                    <p>Информация, распространенная любым способом, в любой форме и с использованием любых средств, адресованная неопределенному кругу лиц и направленная на привлечение внимания к объекту рекламирования.</p>
+                                </div>
+                                <p>
+                                    Услуги:
+                                </p>
+                                <article>
+                                    <div class="col">
+                                        <p>
+                                            Рекламный консалтинг
+                                        </p>
+                                        <p>
+                                            Рекламное планирование и бюджетирование
+                                        </p>
+                                        <p>
+                                            Контроль эффективности рекламных кампаний
+                                        </p>
+                                    </div>
+                                    <div class="col">
+                                        <p>
+                                            Размещение рекламы
+                                        </p>
+                                        <p>
+                                            Корректировка и оптимизация рекламных кампаний и бюджетов
+                                        </p>
+                                        <p>
+                                            Разработка концепций рекламных кампаний
+                                        </p>
+                                    </div>
+                                    <div class="col">
+                                        <p>
+                                            Медиапланирование
+                                        </p>
+                                        <p>
+                                            Дизайн и создание эффективной рекламы любых видов
+                                        </p>
+                                    </div>
+                                </article>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="slide">
+                                <div class="logo">
+                                    <div class="name">
+                                        <img src="main/Third/p.png" alt="P">
+                                        <img src="main/Third/r.png" alt="P">
+                                        <img src="main/Third/m.png" alt="RM">
+                                    </div>
+                                    <div class="header-dots">
+                                        <img src="./main/horizontal_dots.png" alt="HORIZONTAL_DOTS">
+                                    </div>
+                                </div>
+                                <div class="title">
+                                    <p>Система управления, регулирования и изучения рынка.</p>
+                                </div>
+                                <p>
+                                    Услуги:
+                                </p>
+                                <article>
+                                    <div class="col">
+                                        <p>
+                                            Разработка маркетинговой стратегии
+                                        </p>
+                                        <p>
+                                            Анализ рынка конкурентов
+                                        </p>
+                                        <p>
+                                            Аутсорсинг отдела продаж
+                                        </p>
+                                        <p>
+                                            Разработка стратегии продаж и маркетинга
+                                        </p>
+                                    </div>
+                                    <div class="col">
+                                        <p>
+                                            Маркетинговые исследования
+                                        </p>
+                                        <p>
+                                            Маркетинговый аудит
+                                        </p>
+                                        <p>
+                                            Создание бренда с «0»
+                                        </p>
+                                        <p>
+                                            Разработка стратегии развития малого и среднего бизнеса
+                                        </p>
+                                    </div>
+                                    <div class="col">
+                                        <p>
+                                            Медиапланирование
+                                        </p>
+                                        <p>
+                                            Аутсорсинг маркетинга
+                                        </p>
+                                        <p>
+                                            Подбор персонала
+                                        </p>
+                                        <p>
+                                            Стратегия развития филиальной и дилерской сети
+                                        </p>
+                                    </div>
+                                </article>
+                            </div>
+                        </li>
                     </ul>
-                </article>
-                    <footer>
-                        <div class="contact">
-                            <span onclick="expand_popover(2, true)">Контакты</span>
-                            <div class="popover" id="popover_mob2"><i class="fas fa-envelope-square"></i> <a href="mailto:reklama@prm-art.com">reklama@prm-art.com</a><br><br><i class="fas fa-phone"></i> <a href=":tel+79110885758">+7(911)-088-57-58</a></div>
+                </div>
+                <div class="slider-dots">
+                    <div class="dots">
+                        <div id="dot1" class="dot dot-active">
                         </div>
-                    </footer>
-            </main>
+                        <div id="dot2" class="dot">
+                        </div>
+                        <div id="dot3" class="dot">
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-controls">
+                    <div class="arrows">
+                        <div class="arrow_box">
+                            <img class="prev" src="./slider/arrow_left.png" alt="arrow-left">
+                        </div>
+                        <div class="arrow_box">
+                            <img class="next" src="./slider/arrwo_right.png" alt="arrow_right">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="contacts-icons-box">
+                <div class='col'>
+                    <div class="social-icon-box">
+                        <img src="main/social/phone.png" alt="PHONE">
+                    </div>
+                    <div class="social-icon-box">
+                        <img src="main/social/email.png" alt="EMAIL">
+                    </div>
+                    <div class="social-icon-box">
+                        <img src="main/social/inst.png" alt="INSTAGRAM">
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="left">
+                <div class="logo">
+                    <img src="Footer/Logo.png" alt="LOGO">
+                </div>
+                <div class="org">
+                    <p>ООО «П.Р.М.»</p>
+                    <p>ИНН 7804685854</p>
+                    <p>ОГРН 1217800126125</p>
+                </div>
+                <div class="address">
+                    <p>
+                        г. Санкт-Петербург, просп. Полюстровский,
+                    </p>
+                    <p>
+                        д. 59 лит. Ф, помещение 1-Н, офис 332/2
+                    </p>
+                    <p>
+                        E-mail: info@prm-art.com
+                    </p>
+                </div>
             </div>
-            <div class="title" onclick="showMobileSection(2)">R</div>
-        </section>
-        <section id="secMob3" class="card hide">
-            <div class="flex_col">
-                <main class="card-body">
-                    <header onclick="krestik_function()" class="card-header">
-                        <div class="big-title">
-                            <div>M</div>
-                            <div class="middle">arketing</div>
-                            <div class="small">система управления, регулирования и изучения рынка.</div>
-                        </div>
-                    </header>
-                    <header onclick="krestik_function()">Услуги</header>
-                    <article onclick="krestik_function()"`>
-                        <ul>
-                            <li>Разработка маркетинговой стратегии;</li>
-                            <li>Маркетинговые исследования;</li>
-                            <li>Медиапланирование;</li>
-                            <li>Анализ рынка конкурентов;</li>
-                            <li>Маркетинговый аудит;</li>
-                            <li>Аутсорсинг маркетинга;</li>
-                            <li>Разработка стратегии продаж и маркетинга;</li>
-                            <li>Разработка стратегии развития малого и среднего бизнеса;</li>
-                            <li>Стратегия развития филиальной и дилерской сети;</li>
-                            <li>Аутсорсинг отдела продаж;</li>
-                            <li>Создание бренда с «0»;</li>
-                            <li>Подбор персонала.</li>
-                        </ul>
-                    </article>
-                    <footer>
-                        <div class="contact">
-                            <span onclick="expand_popover(3, true)">Контакты</span>
-                            <div class="popover" id="popover_mob3"><i class="fas fa-envelope-square"></i> <a href="mailto:marketing@prm-art.com">marketing@prm-art.com</a><br><br><i class="fas fa-phone"></i> <a href=":tel+79110885758">+7(911)-088-57-58</a></div>
-                        </div>
-                    </footer>
-                </main>
+            <div class="right">
+                <div class="prm">
+                    <img src="Footer/footer_logo2.png" alt="PRM">
+                </div>
             </div>
-            <div class="title" onclick="showMobileSection(3)">M</div>
-        </section>
-    </main>
-
-    <div id="modal" class="hide-modal" onclick="hideModal()">
-        <h3>Телефона: </h3><br>
-        +7(911)-088-57-58
+    </footer>
     </div>
-
-    <!-- scripts -->
-    <script src="./particles/particles.js"></script>
-    <script src="./particles/particlesJs.js"></script>
 </body>
 </html>
