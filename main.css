@@ -4,6 +4,7 @@ html {
     height: 100vh;
     margin: 0px;
     padding: 10px;
+    padding-top: 0px;
     font-family: arial;
     box-sizing: border-box;
     background: linear-gradient(360deg, #201F24 0.36%, #38363F 51.66%, #64626C 100%);
@@ -58,7 +59,7 @@ html {
 
 .wrap main {
     display: flex;
-    margin-top: 50px;
+    margin-top: 10px;
 }
 
 
