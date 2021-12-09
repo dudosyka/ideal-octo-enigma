@@ -19,12 +19,19 @@ html {
     html {
         height: 140vh;    
     }
+    .wrap {
+        height: 140vh;
+    }
     
 }
 
 @media (-webkit-device-pixel-ratio: 1.5) {
     :root {
         zoom: 0.67;
+    }
+    
+    .wrap {
+        height: 170vh;   
     }
     
     body,
