@@ -12,19 +12,25 @@ html {
 }
 
 @media (-webkit-device-pixel-ratio: 1.25) {
-:root {
-zoom: 0.8;
-}}
+    :root {
+        zoom: 0.8;
+    }
+    body,
+    html {
+        height: 140vh;    
+    }
+    
+}
 
 @media (-webkit-device-pixel-ratio: 1.5) {
-:root {
-zoom: 0.6;
-}
+    :root {
+        zoom: 0.6;
+    }
     
-body,
-html {
-    height: 170vh;    
-}
+    body,
+    html {
+        height: 170vh;    
+    }
 }
 
 /* SLIDER */
