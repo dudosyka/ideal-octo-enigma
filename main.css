@@ -158,7 +158,7 @@ html {
     height: 60px;
 }
 
-.slide .logo > * {
+.slide .logo * {
     height: 100%;   
 }
 
