@@ -19,7 +19,13 @@ zoom: 0.8;
 @media (-webkit-device-pixel-ratio: 1.5) {
 :root {
 zoom: 0.6;
-}}
+}
+    
+body,
+html {
+    height: 170vh;    
+}
+}
 
 /* SLIDER */
 .h-items {
