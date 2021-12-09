@@ -155,11 +155,6 @@ html {
 .slide .logo {
     display: flex;
     flex-direction: row;
-    height: 60px;
-}
-
-.slide .logo > * {
-    height: 100%;   
 }
 
 .header-dots {
