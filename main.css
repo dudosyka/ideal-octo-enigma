@@ -181,9 +181,11 @@ html {
     padding: 20px;
 }
 
-.slide .logo {
+main .logo {
     display: flex;
     flex-direction: row;
+    margin-left: 30px;
+    height: 109px;
 }
 
 .header-dots {
