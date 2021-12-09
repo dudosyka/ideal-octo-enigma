@@ -179,6 +179,7 @@ html {
     display: flex;
     flex-direction: column;
     padding: 20px;
+    margin-top: 90px;
 }
 
 main .logo {
@@ -186,6 +187,7 @@ main .logo {
     flex-direction: row;
     margin-left: 30px;
     height: 109px;
+    position: absolute;
 }
 
 .header-dots {

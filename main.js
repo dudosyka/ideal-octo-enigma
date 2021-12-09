@@ -1,4 +1,5 @@
 var hsuma = 0;
+let process = false;
 const dotsStyler = function () {
     if (hsuma === -100) {
         console.log(2);
@@ -8,9 +9,7 @@ const dotsStyler = function () {
 
         $("#logo1").fadeOut(300);
         $("#logo3").fadeOut(300);
-        setTimeout(() => {
-            $("#logo2").fadeIn(300);
-        }, 300)
+        $("#logo2").fadeIn(300);
     }
     if (hsuma === -200) {
         console.log(3);
@@ -20,9 +19,7 @@ const dotsStyler = function () {
 
         $("#logo1").fadeOut(300);
         $("#logo2").fadeOut(300);
-        setTimeout(() => {
-            $("#logo3").fadeIn(300);
-        }, 300);
+        $("#logo3").fadeIn(300);
     }
     if (hsuma === -300 || hsuma === 0) {
         console.log(1);
@@ -32,9 +29,7 @@ const dotsStyler = function () {
 
         $("#logo2").fadeOut(300);
         $("#logo3").fadeOut(300);
-        setTimeout(() => {
-            $("#logo1").fadeIn(300);
-        }, 300);
+        $("#logo1").fadeIn(300);
     }
 }
 
@@ -42,6 +37,7 @@ $(document).ready(function(){
     $("#logo2").fadeOut(0);
     $("#logo3").fadeOut(0);
     $(".next").click(function(){
+        process = true;
         hsuma += -100;
         dotsStyler();
         if(hsuma>=-200)
