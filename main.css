@@ -40,6 +40,12 @@ html {
     }
 }
 
+@media screen and (max-width:  1366px) {
+    :root {
+        zoom: 0.8;
+    }
+}
+
 /* SLIDER */
 .h-items {
     width: 300%;
