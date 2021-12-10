@@ -28,6 +28,10 @@ const dotsStyler = function (before) {
             $("#logo1").fadeOut(300);
             $("#logo2").fadeIn(300);
         }
+        const dots = document.getElementsByClassName("slider-dots")[0];
+        const arrows = document.getElementsByClassName("slider-controls")[0];
+        dots.classList.remove('move_top_dots');
+        arrows.classList.remove('move_top_arrows');
 
     }
     if (step === 3) {
@@ -36,8 +40,6 @@ const dotsStyler = function (before) {
         document.getElementById("dot3").classList.add("dot-active");
 
         if (before === 2) {
-            // document.getElementById("logo_black").classList.add("z-index-2");
-            // document.getElementById("logo_black").classList.remove("z-index-1");
             document.getElementById("logo").classList.add("z-index-1");
             document.getElementById("logo").classList.remove("z-index-2");
             $("#logo3").fadeIn(300);
@@ -49,11 +51,21 @@ const dotsStyler = function (before) {
             $("#logo1").fadeOut(0);
             $("#logo3").fadeIn(300);
         }
+        const dots = document.getElementsByClassName("slider-dots")[0];
+        const arrows = document.getElementsByClassName("slider-controls")[0];
+        dots.classList.remove('move_top_dots');
+        arrows.classList.remove('move_top_arrows');
     }
     if (step === 1) {
         document.getElementById("dot1").classList.add("dot-active");
         document.getElementById("dot2").classList.remove("dot-active");
         document.getElementById("dot3").classList.remove("dot-active");
+
+        const dots = document.getElementsByClassName("slider-dots")[0];
+        const arrows = document.getElementsByClassName("slider-controls")[0];
+        dots.classList.add('move_top_dots');
+        arrows.classList.add('move_top_arrows');
+
 
         $("#logo2").fadeOut(300);
         $("#logo3").fadeOut(300);

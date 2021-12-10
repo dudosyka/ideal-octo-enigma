@@ -74,7 +74,7 @@ html {
 
 .wrap {
     max-width: 1530px;
-    height: 100vh;
+    height: 140vh;
     overflow: hidden;
     margin: 0 auto;
 }
@@ -142,17 +142,12 @@ html {
     margin-bottom: 20px;
 }
 
-
-.vertical-dots-box {
-    margin-top: 30px;
-}
-
 .contacts-icons-box {
     display: flex;
     flex-direction: column;
     justify-content: center;
     position: relative;
-    top: -50px;
+    top: -90px;
 }
 
 .contacts-icons-box .col {
@@ -171,6 +166,10 @@ html {
     flex-direction: column;
     padding: 20px;
     margin-top: 90px;
+}
+
+header .logo {
+    margin-left: 32px;
 }
 
 
@@ -205,12 +204,12 @@ main .logo {
 }
 
 .slide .title {
-    margin-top: 10px;
+    margin-top: -20px;
+    margin-bottom: -8px;
     font-family: Roboto, sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 24px;
-    line-height: 28px;
+    font-size: 28px;
     color: white
 }
 .slide > p {
@@ -218,8 +217,9 @@ main .logo {
     font-family: Roboto, sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 20px;
+    font-size: 24px;
     line-height: 23px;
+    margin-bottom: -5px;
     color: white;
 }
 
@@ -229,15 +229,20 @@ main .logo {
     font-family: Roboto, sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 16px;
-    line-height: 19px;
+    font-size: 20px;
+    line-height: 22px;
     color: #FFFFFF;
 }
 
 .slide article .col {
     display: flex;
     flex-direction: column;
-    width: 33.3%;
+    width: 25.3%;
+    margin-right: 8%;
+}
+
+.slide article .col p {
+    margin-bottom: 5px;
 }
 
 .slider-dots {
@@ -258,6 +263,15 @@ main .logo {
     justify-content: end;
     position: relative;
     top: -30px
+}
+
+.move_top_arrows{
+    top: -80px;
+}
+
+.move_top_dots{
+    position: relative;
+    top: -50px;
 }
 
 .slider-controls .arrows {
@@ -288,10 +302,15 @@ footer .left {
     flex-direction: row;
     justify-content: start;
     align-items: center;
+    line-height: 10px;
+}
+
+footer .left .logo {
+    margin-left: 50px;
 }
 
 footer .left div:first-child {
-    margin-right: 30px;
+    margin-right: 22px;
 }
 
 footer .left div:last-child {
